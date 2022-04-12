@@ -1,5 +1,5 @@
 local name = "cosign"
-local version = "1.7.1"
+local version = "1.7.2"
 
 food = {
     name = name,
@@ -9,47 +9,10 @@ food = {
     version = version,
     packages = {
         {
-            os = "linux",
-            arch = "arm64",
-            url = "https://github.com/sigstore/cosign/releases/download/v1.7.1/cosign-linux-arm64",
-            sha256 = "1caf266cf27825ea10081363746e034b6f24da0e38475d4ddad7162ecbd2069d",
-            resources = {
-                {
-                    path = "cosign-linux-arm64",
-                    installpath = "bin/cosign-linux-arm64",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "windows",
-            arch = "amd64",
-            url = "https://github.com/sigstore/cosign/releases/download/v1.7.1/cosign-windows-amd64.exe",
-            sha256 = "f1d968675fa52bae5d7accd67ef4a867cb7aafdf8a0fa236a79b5b745a163170",
-            resources = {
-                {
-                    path = "cosign-windows-amd64.exe",
-                    installpath = "bin\\cosign-windows-amd64.exe",
-                },
-            }
-        },
-        {
-            os = "windows",
-            arch = "amd64",
-            url = "https://github.com/sigstore/cosign/releases/download/v1.7.1/sget-windows-amd64.exe",
-            sha256 = "7acdc83330fe6cd7f295285ec9034fc8607a4b0a9f411d30610af55bbd8b3c44",
-            resources = {
-                {
-                    path = "sget-windows-amd64.exe",
-                    installpath = "bin\\sget-windows-amd64.exe",
-                },
-            }
-        },
-        {
             os = "darwin",
             arch = "arm64",
-            url = "https://github.com/sigstore/cosign/releases/download/v1.7.1/cosign-darwin-arm64",
-            sha256 = "b2427998b43c3db3dd773b127f4fc17e3c55353d0c6ac4a4c3fdff9309ce912f",
+            url = "https://github.com/sigstore/cosign/releases/download/v1.7.2/cosign-darwin-arm64",
+            sha256 = "6dababc0001a695f03aa5a9712700d7ee1763375c5e97fc2544f11a88ebe9d5b",
             resources = {
                 {
                     path = "cosign-darwin-arm64",
@@ -59,10 +22,22 @@ food = {
             }
         },
         {
+            os = "windows",
+            arch = "amd64",
+            url = "https://github.com/sigstore/cosign/releases/download/v1.7.2/cosign-windows-amd64.exe",
+            sha256 = "c177618c5dcda93d49f337f99f5ccfbfb9b38a1194a8bb8df21ebbe7625c4bcb",
+            resources = {
+                {
+                    path = "cosign-windows-amd64.exe",
+                    installpath = "bin\\cosign-windows-amd64.exe",
+                },
+            }
+        },
+        {
             os = "darwin",
             arch = "arm64",
-            url = "https://github.com/sigstore/cosign/releases/download/v1.7.1/sget-darwin-arm64",
-            sha256 = "28a21789e000351d58a98bb5fd1b2425e2258945aa9e05c7fb594debf44baef7",
+            url = "https://github.com/sigstore/cosign/releases/download/v1.7.2/sget-darwin-arm64",
+            sha256 = "5e7134c68e3b3b78d6f55db63b57f200cd958ce4cf0fa0b60ddcce36e734933a",
             resources = {
                 {
                     path = "sget-darwin-arm64",
@@ -72,10 +47,87 @@ food = {
             }
         },
         {
+            os = "linux",
+            arch = "amd64",
+            url = "https://github.com/sigstore/cosign/releases/download/v1.7.2/cosign-linux-amd64",
+            sha256 = "80f80f3ef5b9ded92aa39a9dd8e028f5b942a3b6964f24c47b35e7f6e4d18907",
+            resources = {
+                {
+                    path = "cosign-linux-amd64",
+                    installpath = "bin/cosign-linux-amd64",
+                    executable = true
+                },
+            }
+        },
+        {
+            os = "windows",
+            arch = "amd64",
+            url = "https://github.com/sigstore/cosign/releases/download/v1.7.2/sget-windows-amd64.exe",
+            sha256 = "34fdcfd46612d4a9f5c0d939deda9e6757e7e4672f1aee718a6bca48e0318572",
+            resources = {
+                {
+                    path = "sget-windows-amd64.exe",
+                    installpath = "bin\\sget-windows-amd64.exe",
+                },
+            }
+        },
+        {
+            os = "linux",
+            arch = "amd64",
+            url = "https://github.com/sigstore/cosign/releases/download/v1.7.2/cosign-linux-pivkey-pkcs11key-amd64",
+            sha256 = "a0f9ae21dc63b2a0c967eca2f4faff18e9967f4423bfb221a954f76df76c70f1",
+            resources = {
+                {
+                    path = "cosign-linux-pivkey-pkcs11key-amd64",
+                    installpath = "bin/cosign-linux-pivkey-pkcs11key-amd64",
+                    executable = true
+                },
+            }
+        },
+        {
+            os = "linux",
+            arch = "arm64",
+            url = "https://github.com/sigstore/cosign/releases/download/v1.7.2/cosign-linux-arm64",
+            sha256 = "2448231e6bde13722aad7a17ac00789d187615a24c7f82739273ea589a42c94b",
+            resources = {
+                {
+                    path = "cosign-linux-arm64",
+                    installpath = "bin/cosign-linux-arm64",
+                    executable = true
+                },
+            }
+        },
+        {
+            os = "linux",
+            arch = "amd64",
+            url = "https://github.com/sigstore/cosign/releases/download/v1.7.2/sget-linux-amd64",
+            sha256 = "fd1fc2143baadab82ac5a2fa6df6eb7a18b28485f04a50c8422b900881ddfc58",
+            resources = {
+                {
+                    path = "sget-linux-amd64",
+                    installpath = "bin/sget-linux-amd64",
+                    executable = true
+                },
+            }
+        },
+        {
+            os = "linux",
+            arch = "arm64",
+            url = "https://github.com/sigstore/cosign/releases/download/v1.7.2/sget-linux-arm64",
+            sha256 = "9631a9faaa49ad36742b7b83fa213cf7e8c95c6164b46c487ec52d581503ab51",
+            resources = {
+                {
+                    path = "sget-linux-arm64",
+                    installpath = "bin/sget-linux-arm64",
+                    executable = true
+                },
+            }
+        },
+        {
             os = "darwin",
             arch = "amd64",
-            url = "https://github.com/sigstore/cosign/releases/download/v1.7.1/cosign-darwin-amd64",
-            sha256 = "f9b598a5c7f571f1ccfd168aea90c1022dc53f4ee9997f6d58aa9f3b0db04a7f",
+            url = "https://github.com/sigstore/cosign/releases/download/v1.7.2/cosign-darwin-amd64",
+            sha256 = "fab8f2c4f8705a4c4fd2cc97856213e1d0b86d5b1707a39edc462b9b05afe7fb",
             resources = {
                 {
                     path = "cosign-darwin-amd64",
@@ -87,64 +139,12 @@ food = {
         {
             os = "darwin",
             arch = "amd64",
-            url = "https://github.com/sigstore/cosign/releases/download/v1.7.1/sget-darwin-amd64",
-            sha256 = "e317aa8afff22f0bd759ff2a56c4269bc36e0db80bbd21071f444c51a9ffeb85",
+            url = "https://github.com/sigstore/cosign/releases/download/v1.7.2/sget-darwin-amd64",
+            sha256 = "742c0b44a799e3a619164af8f3bd2cdd0b6309aa335bdcc9f061196239ac2efa",
             resources = {
                 {
                     path = "sget-darwin-amd64",
                     installpath = "bin/sget-darwin-amd64",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "linux",
-            arch = "amd64",
-            url = "https://github.com/sigstore/cosign/releases/download/v1.7.1/cosign-linux-amd64",
-            sha256 = "2ed460ccc1ba44f10ef98c19cafddad5b5199659c8a35e4b9b2040012ae1b235",
-            resources = {
-                {
-                    path = "cosign-linux-amd64",
-                    installpath = "bin/cosign-linux-amd64",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "linux",
-            arch = "arm64",
-            url = "https://github.com/sigstore/cosign/releases/download/v1.7.1/sget-linux-arm64",
-            sha256 = "597bd30e09d4656aea30828b271299f1d252ab000cc4b67df08ddabe9c8b7c89",
-            resources = {
-                {
-                    path = "sget-linux-arm64",
-                    installpath = "bin/sget-linux-arm64",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "linux",
-            arch = "amd64",
-            url = "https://github.com/sigstore/cosign/releases/download/v1.7.1/cosign-linux-pivkey-pkcs11key-amd64",
-            sha256 = "2c9a18c4695d398657856efd0c148d6efa7f7e7b4f2f7b884af94e2074947bd5",
-            resources = {
-                {
-                    path = "cosign-linux-pivkey-pkcs11key-amd64",
-                    installpath = "bin/cosign-linux-pivkey-pkcs11key-amd64",
-                    executable = true
-                },
-            }
-        },
-        {
-            os = "linux",
-            arch = "amd64",
-            url = "https://github.com/sigstore/cosign/releases/download/v1.7.1/sget-linux-amd64",
-            sha256 = "2b2fd3c481eafe8f219d0dd8423883e87c73d9ec91a22fb898d7c63871d7261a",
-            resources = {
-                {
-                    path = "sget-linux-amd64",
-                    installpath = "bin/sget-linux-amd64",
                     executable = true
                 },
             }
